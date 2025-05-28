@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annuaire des Plateformes de Vente en Ligne</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .intro {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        .platforms-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .platform-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            position: relative;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .platform-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: #3498db;
+        }
+        .platform-card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .platform-card p {
+            margin-bottom: 8px;
+        }
+        .platform-card .url {
+            color: #3498db;
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+        .category {
+            margin-top: 40px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2c3e50;
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .platforms-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Annuaire des Plateformes de Vente en Ligne</h1>
+        <p>Découvrez toutes les principales plateformes e-commerce</p>
+    </header>
+
+    <div class="intro">
+        <p>Ce site recense les principales plateformes de vente en ligne à travers le monde. Que vous soyez un acheteur ou un vendeur, vous trouverez ici les marketplaces les plus populaires pour vos besoins.</p>
+        <p><strong>Cliquez sur n'importe quelle carte pour accéder directement au site.</strong></p>
+    </div>
+
+    <h2 class="category">Plateformes Généralistes Internationales</h2>
+    <div class="platforms-container">
+        <a href="https://www.amazon.com" target="_blank" class="platform-card">
+            <h3>Amazon</h3>
+            <p>Le géant du e-commerce avec une présence mondiale.</p>
+            <p><strong>Pays :</strong> International</p>
+            <span class="url">amazon.com</span>
+        </a>
+        
+        <a href="https://www.ebay.com" target="_blank" class="platform-card">
+            <h3>eBay</h3>
+            <p>Plateforme de vente aux enchères et de commerce électronique.</p>
+            <p><strong>Pays :</strong> International</p>
+            <span class="url">ebay.com</span>
+        </a>
+        
+        <a href="https://www.aliexpress.com" target="_blank" class="platform-card">
+            <h3>AliExpress</h3>
+            <p>Marketplace internationale appartenant à Alibaba.</p>
+            <p><strong>Pays :</strong> Chine (international)</p>
+            <span class="url">aliexpress.com</span>
+        </a>
+    </div>
+
+    <h2 class="category">Plateformes Généralistes Françaises/Europe</h2>
+    <div class="platforms-container">
+        <a href="https://www.cdiscount.com" target="_blank" class="platform-card">
+            <h3>Cdiscount</h3>
+            <p>Leader français du e-commerce à prix discount.</p>
+            <p><strong>Pays :</strong> France</p>
+            <span class="url">cdiscount.com</span>
+        </a>
+        
+        <a href="https://www.fnac.com" target="_blank" class="platform-card">
+            <h3>Fnac</h3>
+            <p>Spécialisée dans les produits culturels et électroniques.</p>
+            <p><strong>Pays :</strong> France, Europe</p>
+            <span class="url">fnac.com</span>
+        </a>
+        
+        <a href="https://www.darty.com" target="_blank" class="platform-card">
+            <h3>Darty</h3>
+            <p>Spécialiste de l'électroménager et de l'électronique.</p>
+            <p><strong>Pays :</strong> France</p>
+            <span class="url">darty.com</span>
+        </a>
+        
+        <a href="https://www.rakuten.fr" target="_blank" class="platform-card">
+            <h3>Rakuten</h3>
+            <p>Anciennement PriceMinister, marketplace généraliste.</p>
+            <p><strong>Pays :</strong> France</p>
+            <span class="url">rakuten.fr</span>
+        </a>
+        
+        <a href="https://www.manomano.fr" target="_blank" class="platform-card">
+            <h3>Manomano</h3>
+            <p>Spécialisée dans le bricolage et le jardinage.</p>
+            <p><strong>Pays :</strong> Europe</p>
+            <span class="url">manomano.fr</span>
+        </a>
+    </div>
+
+    <h2 class="category">Mode et Accessoires</h2>
+    <div class="platforms-container">
+        <a href="https://www.veepee.fr" target="_blank" class="platform-card">
+            <h3>Veepee (ex-Vente-privee)</h3>
+            <p>Ventes privées de marques de mode et lifestyle.</p>
+            <p><strong>Pays :</strong> Europe</p>
+            <span class="url">veepee.fr</span>
+        </a>
+        
+        <a href="https://www.showroomprive.com" target="_blank" class="platform-card">
+            <h3>Showroomprive</h3>
+            <p>Ventes privées dans la mode et le lifestyle.</p>
+            <p><strong>Pays :</strong> France, Europe</p>
+            <span class="url">showroomprive.com</span>
+        </a>
+        
+        <a href="https://www.zalando.fr" target="_blank" class="platform-card">
+            <h3>Zalando</h3>
+            <p>Spécialiste de la mode et des chaussures.</p>
+            <p><strong>Pays :</strong> Europe</p>
+            <span class="url">zalando.fr</span>
+        </a>
+        
+        <a href="https://www.asos.com" target="_blank" class="platform-card">
+            <h3>ASOS</h3>
+            <p>Mode pour hommes et femmes, tendances jeunes.</p>
+            <p><strong>Pays :</strong> International</p>
+            <span class="url">asos.com</span>
+        </a>
+    </div>
+
+    <h2 class="category">Produits d'Occasion</h2>
+    <div class="platforms-container">
+        <a href="https://www.leboncoin.fr" target="_blank" class="platform-card">
+            <h3>Leboncoin</h3>
+            <p>Plateforme de petites annonces en France.</p>
+            <p><strong>Pays :</strong> France</p>
+            <span class="url">leboncoin.fr</span>
+        </a>
+        
+        <a href="https://www.vinted.fr" target="_blank" class="platform-card">
+            <h3>Vinted</h3>
+            <p>Vente de vêtements et accessoires d'occasion.</p>
+            <p><strong>Pays :</strong> Europe, International</p>
+            <span class="url">vinted.fr</span>
+        </a>
+        
+        <a href="https://www.backmarket.fr" target="_blank" class="platform-card">
+            <h3>Back Market</h3>
+            <p>Spécialiste des produits électroniques reconditionnés.</p>
+            <p><strong>Pays :</strong> International</p>
+            <span class="url">backmarket.fr</span>
+        </a>
+    </div>
+
+    <h2 class="category">Plateformes Spécialisées</h2>
+    <div class="platforms-container">
+        <a href="https://www.etsy.com" target="_blank" class="platform-card">
+            <h3>Etsy</h3>
+            <p>Plateforme pour les produits artisanaux et vintage.</p>
+            <p><strong>Pays :</strong> International</p>
+            <span class="url">etsy.com</span>
+        </a>
+        
+        <a href="https://www.mirakl.com" target="_blank" class="platform-card">
+            <h3>Mirakl</h3>
+            <p>Solution de marketplace pour les entreprises.</p>
+            <p><strong>Pays :</strong> International</p>
+            <span class="url">mirakl.com</span>
+        </a>
+        
+        <a href="https://www.laredoute.fr" target="_blank" class="platform-card">
+            <h3>La Redoute</h3>
+            <p>Mode, maison et électroménager.</p>
+            <p><strong>Pays :</strong> France, Europe</p>
+            <span class="url">laredoute.fr</span>
+        </a>
+        
+        <a href="https://www.rueducommerce.fr" target="_blank" class="platform-card">
+            <h3>Rue du Commerce</h3>
+            <p>Spécialiste high-tech et électroménager.</p>
+            <p><strong>Pays :</strong> France</p>
+            <span class="url">rueducommerce.fr</span>
+        </a>
+    </div>
+
+    <footer>
+        <p>© 2023 Annuaire des Plateformes de Vente en Ligne</p>
+        <p>Ce site est à but informatif seulement et n'est affilié à aucune des plateformes listées.</p>
+        <p>Dernière mise à jour : Octobre 2023</p>
+    </footer>
+</body>
+</htm
